@@ -1,3 +1,11 @@
+Master
+1. [![Build Status](https://travis-ci.org/thdox/emacs-travis.svg?branch=master)](https://travis-ci.org/thdox/emacs-travis)
+2. [![Build Status master](https://img.shields.io/travis/thdox/emacs-travis/master.svg?label=master&style=flat)](https://travis-ci.org/thdox/emacs-travis)
+
+Test-01
+1. [![Build Status](https://travis-ci.org/thdox/emacs-travis.svg?branch=test-01)](https://travis-ci.org/thdox/emacs-travis)
+2. [![Build Status test-01](https://img.shields.io/travis/thdox/emacs-travis/test-01.svg?label=test-01&style=flat)](https://travis-ci.org/thdox/emacs-travis)
+
 Overview
 ========
 
