@@ -5,8 +5,6 @@ EMACS_BATCH=$(EMACS_CLEAN) --batch
 TESTS=
 
 CURL=curl --silent
-WORK_DIR=$(shell pwd)
-PACKAGE_NAME=$(shell basename $(WORK_DIR))
 TEST_DIR=test
 TEST_DEP_1=ert
 TEST_DEP_1_STABLE_URL=http://git.savannah.gnu.org/cgit/emacs.git/plain/lisp/emacs-lisp/ert.el?h=emacs-24.3
