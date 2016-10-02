@@ -1,12 +1,6 @@
 ###
 ### Notes
 ###
-### The travis web interface may choke silently and fail to
-### update when there are issues with the .travis.yml file.
-###
-### The "travis-lint" command-line tool does not catch all
-### errors which may lead to silent failure.
-###
 ### Shell-style comments in this file must have "#" as the
 ### *first* character of the line.
 ###
@@ -15,7 +9,6 @@
 ### language
 ###
 
-# travis-lint no longer permits this value
 # language: emacs-lisp
 
 ###

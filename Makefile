@@ -7,13 +7,12 @@ TESTS=
 CURL=curl --silent
 WORK_DIR=$(shell pwd)
 PACKAGE_NAME=$(shell basename $(WORK_DIR))
-TRAVIS_FILE=.travis.yml
 TEST_DIR=test
 TEST_DEP_1=ert
 TEST_DEP_1_STABLE_URL=http://git.savannah.gnu.org/cgit/emacs.git/plain/lisp/emacs-lisp/ert.el?h=emacs-24.3
 TEST_DEP_1_LATEST_URL=http://git.savannah.gnu.org/cgit/emacs.git/plain/lisp/emacs-lisp/ert.el?h=master
 
-.PHONY : build downloads downloads-latest test-travis \
+.PHONY : build downloads downloads-latest \
          test test-interactive clean edit test-dep-1 test-dep-2 test-dep-3     \
          test-dep-4 test-dep-5 test-dep-6 test-dep-7 test-dep-8 test-dep-9
 
@@ -33,9 +32,6 @@ downloads :
 
 downloads-latest :
 	$(CURL) '$(TEST_DEP_1_LATEST_URL)' > $(TEST_DIR)/$(TEST_DEP_1).el
-
-test-travis :
-	@if test -z "$$TRAVIS" && test -e $(TRAVIS_FILE); then travis-lint $(TRAVIS_FILE); fi
 
 test : build test-dep-1
 	@cd $(TEST_DIR)                                   && \
