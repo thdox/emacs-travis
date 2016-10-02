@@ -9,7 +9,7 @@
 ### language
 ###
 
-# language: emacs-lisp
+language: generic
 
 ###
 ### defining the build matrix
