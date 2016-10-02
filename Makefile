@@ -13,8 +13,7 @@ TEST_DEP_1_STABLE_URL=http://git.savannah.gnu.org/cgit/emacs.git/plain/lisp/emac
 TEST_DEP_1_LATEST_URL=http://git.savannah.gnu.org/cgit/emacs.git/plain/lisp/emacs-lisp/ert.el?h=master
 
 .PHONY : build downloads downloads-latest \
-         test test-interactive clean edit test-dep-1 test-dep-2 test-dep-3     \
-         test-dep-4 test-dep-5 test-dep-6 test-dep-7 test-dep-8 test-dep-9
+         test test-interactive clean edit test-dep-1
 
 build :
 	$(EMACS) $(EMACS_BATCH) --eval             \
@@ -43,7 +42,4 @@ test : build test-dep-1
 	done)
 
 clean :
-	@rm -f *.elc *~ */*.elc */*~ $(TEST_DIR)/$(TEST_DEP_1).el            \
-        $(TEST_DIR)/$(TEST_DEP_2).el $(TEST_DIR)/$(TEST_DEP_3).el $(TEST_DIR)/$(TEST_DEP_4).el \
-        $(TEST_DIR)/$(TEST_DEP_5).el $(TEST_DIR)/$(TEST_DEP_6).el $(TEST_DIR)/$(TEST_DEP_7).el \
-        $(TEST_DIR)/$(TEST_DEP_8).el $(TEST_DIR)/$(TEST_DEP_9).el
+	@rm -f *.elc *~ */*.elc */*~ $(TEST_DIR)/$(TEST_DEP_1).el
