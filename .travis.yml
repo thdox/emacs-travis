@@ -30,7 +30,7 @@ env:
     - EMACS=emacs24
     - EMACS=emacs-snapshot
   global:
-    - SOME_TOKEN=some_value
+#   - SOME_TOKEN=some_value
 
 ###
 ### allowing build failures
