@@ -13,7 +13,7 @@ TEST_DEP_1_STABLE_URL=http://git.savannah.gnu.org/cgit/emacs.git/plain/lisp/emac
 TEST_DEP_1_LATEST_URL=http://git.savannah.gnu.org/cgit/emacs.git/plain/lisp/emacs-lisp/ert.el?h=master
 
 .PHONY : build downloads downloads-latest \
-         test test-interactive clean edit test-dep-1
+         test clean test-dep-1
 
 build :
 	$(EMACS) $(EMACS_BATCH) --eval             \
